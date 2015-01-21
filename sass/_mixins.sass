@@ -1,0 +1,30 @@
+/* mixins */
+
+@mixin border-radius ( $args )
+	-webkit-border-radius: $args
+	-moz-border-radius: $args
+	border-radius: $args
+
+@mixin transition ( $duration, $property, $function, $delay)
+	-webkit-transition: $duration $property $function $delay
+	-moz-transition-duration: $duration
+	-moz-transtition-property: $property
+	-moz-transition-timing-function: $function
+	-moz-transition-delay: $delay
+	-o-transition: $duration $property $function $delay
+	transition: $duration $property $function $delay
+
+@mixin scale ($args)
+	-webkit-transform: scale($args)
+	-o-transform: scale($args)
+	transform: scale($args)
+
+@mixin grayscale ($args)
+	-webkit-filter: grayscale($args)
+	-moz-filter: grayscale($args)
+	filter: grayscale($args)
+
+@mixin remove-filter ()
+	-webkit-filter: none
+	-moz-filter: none
+	filter: none

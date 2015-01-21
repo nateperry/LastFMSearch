@@ -1,0 +1,74 @@
+
+// menu
+.theme-list
+  .theme-option.#{$theme-name}
+    &:hover
+      background: $primary
+    .preview
+      background: $primary
+
+// general
+body.#{$theme-name}
+  color: $body-font-color
+
+  h1, h2, h3
+    color: $primary
+
+  a
+    color: $secondary
+    &:hover, &:focus
+      color: lighten($secondary, 10%)
+
+  input[type=text], input[type=date], input[type=email], input[type=search]
+    color: $secondary
+
+  hr
+    background: $body-font-color
+    border-color: $body-font-color
+
+  #footer
+    border-color: $body-font-color
+
+  .button-link
+    color: $body-font-color
+    border-color: $body-font-color
+
+  .tag
+    background: $tag-color
+    color: $white
+    &:hover
+      background: lighten($tag-color, 5%)
+      color: $white
+
+  // events
+  .page-title
+    color: $body-font-color
+
+  .venue
+    color: $body-font-color
+
+  .event-date
+    background: darken($secondary, 8%)
+
+  // sidebar
+  .search-cta
+    color: $body-font-color
+
+  // banner
+  .banner
+    background: $primary
+    border-bottom-color: darken($primary, 8%)
+    border-top-color: lighten($primary, 5%)
+    h1
+      color: darken($primary, 10%)
+      text-shadow: 0px 1px 0px lighten($primary, 5%)
+    input[type=text], input[type=search]
+      border-color: darken($primary, 3%)
+    small
+      color: darken($primary, 15%)
+
+    // custom banners
+    &.profile
+      background: darken($secondary, 6%)
+      border-color: darken($secondary, 14%)
+

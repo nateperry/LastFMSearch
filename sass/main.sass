@@ -1,0 +1,59 @@
+/* main.sass */
+
+// import all partials
+@import '_mixins'
+@import '_general'
+@import '_banner'
+@import '_sidebar'
+@import '_events'
+@import '_media_queries'
+
+// import each color theme
+$theme-name     : "default"
+$primary        : $bluegreen
+$secondary      : $purple
+$body-font-color: $grey
+$tag-color      : $blue
+@import '_theme'
+
+$theme-name     : "bluegrey"
+$primary        : $bluegrey
+$secondary      : $orange
+$body-font-color: $grey
+$tag-color      : $grey-med
+@import '_theme'
+
+$theme-name     : "red"
+$primary        : $red
+$secondary      : $orange
+$body-font-color: $bluegrey
+$tag-color      : $bluegrey
+@import '_theme'
+
+$theme-name     : "blue"
+$primary        : $blue
+$secondary      : $orange
+$body-font-color: $grey
+$tag-color      : $red
+@import '_theme'
+
+$theme-name     : "violet"
+$primary        : $violet
+$secondary      : $grey
+$body-font-color: $grey-med
+$tag-color      : $bluegreen
+@import '_theme'
+
+$theme-name     : "concrete"
+$primary        : $concrete
+$secondary      : $grey
+$body-font-color: $grey-med
+$tag-color      : $concrete
+@import '_theme'
+
+$theme-name     : "orange"
+$primary        : $orange
+$secondary      : $grey
+$body-font-color: $grey-med
+$tag-color      : $blue
+@import '_theme'

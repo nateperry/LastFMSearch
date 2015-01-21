@@ -1,0 +1,48 @@
+.banner
+  border-bottom: 2px solid
+  border-top: 2px solid
+  box-sizing: border-box
+  color: $white
+  margin: 0
+  min-height: 10px
+  padding: 10px 0 15px
+  position: relative
+  width: 100%
+  h1
+    text-shadow: 0px 1px 0px
+
+  // CUSTOM BANNERS
+  &#welcome
+    height: 100%
+    bottom: 0
+    top: 0
+    min-height: 450px
+    left: 0
+    right: 0
+    padding: 0
+    text-align: center
+    .inner
+      position: relative
+      top: 40%
+      transform: translateY(-50%)
+    #initial-search
+      background: $white
+      @include border-radius(8px)
+      font-size: 2em
+      letter-spacing: 3px
+      padding: 3px 10px
+      text-align: center
+      width: 80%
+  &.profile
+    border-bottom: 12px solid
+    border-top: 0
+    padding-top: 0
+    .artist-image
+      height: auto
+      margin: 0
+      padding: 0
+      width: 100%
+    .artist-info
+      margin: 0 8px
+    .formed
+      display: block

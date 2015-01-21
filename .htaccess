@@ -1,0 +1,20 @@
+# Creates a 403 Error for non-indexed directories
+Options -Indexes
+
+# Allows for custom url with queries
+# RewriteEngine on
+# RewriteCond $1 !^(index\.php|images|robots\.txt|css|scripts|error_pages|artist)
+# RewriteRule ^(.*)$ /beta/LastFM/index.php/$1 [L]
+
+# Custom error pages
+# ErrorDocument 403 /beta/LastFM/error_pages/403.php
+# ErrorDocument 404 /beta/LastFM/error_pages/404.php
+
+# Allows for custom url with queries
+# RewriteEngine on
+# RewriteCond $1 !^(index\.php|images|robots\.txt|css|scripts|error_pages|artist)
+# RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# Custom error pages
+# ErrorDocument 403 /LastFM/error_pages/403.php
+# ErrorDocument 404 /LastFM/error_pages/404.php
